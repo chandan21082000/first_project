@@ -23,21 +23,20 @@ for i in range(0,len(qustions)):
     reply=input("enter your guess a-d or press x for quit : ")
     if reply!="a" and reply!="b" and reply!="c" and reply!="d" and reply!="x":
      raise print("guess only between this a,b,c,d")
-    if reply=="x" and i>=1:
+    if reply=="x":
       money=levels[i-1]
-    else:
       print(f"\nyou will be taking home {money}rs")
-    break
+      break
     if reply==qustion[-1]:
-        money=levels[i]
-        print(f"\n you are coreect you won {money}")
-        if i==4:
+       money=levels[i]
+       print(f"\n you are coreect you won {money}")
+       if i==4:
           money=16000
           if i==8:
-            money==320000
+           money==320000
           if i==11:
-            money==10000000
+           money==10000000
     else:
-        print(f"\n you have lost,you will be taking home {money}rs")
-        break
+       print(f"\n you have lost,you will be taking home {money}rs")
+       break
         
